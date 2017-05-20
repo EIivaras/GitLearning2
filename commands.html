@@ -33,6 +33,21 @@ There are some very useful commands to know when using git:
 	-hit "esc" to get out of insert mode 
 	-type in ":wq" when not in insert mode/any other modes to save and commit 
 	-if you type "git status" now, you will see that the staging area is empty, as all changes have been committed 
-12. git
+12. git commit -m '<comments here>'
+	-what this allows you to do is skip the whole editing step when using the normal "git commit"
+	-the comments that you want to accompany your commit will be inserted at <comments here> above
+	-ex: git commit -m 'Initial Commit'
+13. touch .gitignore 
+	-creates a file that will allow us to ignore certain files when doing this like "git add ."
+	-inside this file you will just type the name of the files you want to ignore (one per line)
+	-as you can see, after doing "git add .", the file name which is inside the .gitignore file is not added to the staging area 
+	-we can also do this with folders, but instead of adding a file name, you would add "/<folder name>"
+14. git branch <branch name>
+	-if you want to commit changes for others to see and use, but don't want to overwrite the current master branch because your code might have bugs, git has something known as "branches"
+	-this command creates a new branch of name <branch name> 
+15. git checkout <branch name>
+	-moves you into the <branch name> branch, which allows you to know commit changes, add files, etc to this other branch 
+16. 
+
 
 	
