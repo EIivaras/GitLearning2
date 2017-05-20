@@ -16,7 +16,7 @@ There are some very useful commands to know when using git:
 6. git add <filename>.<ext>
 	-adds file to git repository
 7. git add *.<ext>
-	-adds all files of type <ext> to the staging area 
+	-adds all files of type <ext> to the staging area (staging area is essentially where files wait before being committed)
 8. git add .
 	-adds all files to the staging area 
 9. git status 
@@ -27,6 +27,12 @@ There are some very useful commands to know when using git:
 		3. Are in the staging area and have been modified 
 10. git rm --cached <filename>.<ext> 
 	-removes file from the staging area
-11. git 
+11. git commit 
+	-opens up a VIM editor that shows which files are ready to be committed to the master branch, and allows you to type out comments relating to the changes that you have made 
+	-hit "i" to go into insert mode, and now you can type 
+	-hit "esc" to get out of insert mode 
+	-type in ":wq" when not in insert mode/any other modes to save and commit 
+	-if you type "git status" now, you will see that the staging area is empty, as all changes have been committed 
+12. git
 
 	
